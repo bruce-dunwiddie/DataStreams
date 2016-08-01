@@ -1,0 +1,29 @@
+version: '{build}'
+pull_requests:
+  do_not_increment_build_number: true
+
+install:
+  - ps: choco install gitversion.portable -pre -y
+
+nuget:
+  disable_publish_on_pr: true
+
+before_build:
+  - ps: gitversion /l console /output buildserver /updateAssemblyInfo /b (get-item env:APPVEYOR_REPO_BRANCH).Value
+
+after_build:
+  - cmd: nuget pack -Version "%GitVersion_NuGetVersion%" -Prop "target=%CONFIGURATION%"
+
+artifacts:
+  - path: '*.nupkg'
+    name: NuGet
+
+deploy:
+  - provider: Environment
+    name: PreRelease Nuget Feed
+    on:
+      branch: master
+  - provider: Environment
+    name: Public Nuget Feed
+    on:
+      appveyor_repo_tag: true
