@@ -90,6 +90,7 @@
   <ItemGroup>
     <Reference Include="DataStreams">
       <HintPath>..\..\..\lib\net45\DataStreams.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
