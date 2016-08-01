@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>DataStreams</id>
-    <version>1.0.0</version>
+    <version>$version$</version>
     <authors>mrstebo</authors>
     <owners>mrstebo</owners>
     <licenseUrl>https://github.com/mrstebo/DataStreams/blob/master/LICENSE</licenseUrl>
