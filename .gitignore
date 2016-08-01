@@ -6,3 +6,5 @@
 
 # NuGet specs
 *.nuspec
+
+!lib/**/*.dll
