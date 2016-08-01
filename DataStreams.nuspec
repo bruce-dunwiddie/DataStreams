@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>DataStreams</id>
+    <version>1.0.0</version>
+    <authors>mrstebo</authors>
+    <owners>mrstebo</owners>
+    <licenseUrl>https://github.com/mrstebo/DataStreams/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/mrstebo/DataStreams</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NuGet for existing DataStreams library</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>datastreams data streams</tags>
+    <references>
+      <reference file="DataStreams.dll" />
+    </references>
+  </metadata>
+</package>

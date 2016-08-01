@@ -4,7 +4,4 @@
 # NuGet Packages
 *.nupkg
 
-# NuGet specs
-*.nuspec
-
 !lib/**/*.dll
