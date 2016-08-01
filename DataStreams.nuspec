@@ -16,4 +16,8 @@
       <reference file="DataStreams.dll" />
     </references>
   </metadata>
+  <files>
+    <file src="**" exclude="**\*.*" />
+    <file src="lib/**/*" />
+  </files>
 </package>
